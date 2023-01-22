@@ -1,0 +1,187 @@
+﻿<Window x:Class="AppsInstaller.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppsInstaller"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600"
+        WindowStyle="none"
+        ResizeMode="NoResize"
+        FontFamily="Fonts/#Dosis">
+    <Grid>
+
+        <!--Create background gradiant-->
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF000000" Offset="1"/>
+                <GradientStop Color="#FF12246F"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <!--Segmentation-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <!--Fill Segment One-->
+        <Grid MouseDown="Grid_MouseDown"
+            Background="#FF050F38">
+            <!--Segmentation-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Brand name and icon-->
+            <Image VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+                   Source="Images/Logo.png"
+                   RenderOptions.BitmapScalingMode="Fant"
+                Margin="13,-7,3,-2"
+                RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="15.41"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="6.891"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock Text="Installer"
+                       Foreground="White"
+                       FontSize="24"
+                       FontWeight="Medium"
+                       
+                       VerticalAlignment="Top"
+                       Grid.Column="1" Margin="4,-29,2,0" RenderTransformOrigin="0.5,0.5">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="-5.864"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="21.772"/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+
+            <!--Controlles Button-->
+            <Button Grid.Column="2"
+                    Content="__"
+                    Name="btnMinimize" Click="btnMinimize_Click">
+
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="Width" Value="40"/>
+                        <Setter Property="Height" Value="50"/>
+                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                        <Setter Property="VerticalAlignment" Value="Bottom"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor" Value="Hand"></Setter>
+                                <Setter Property="Background" Value="#FF0A195A"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}">
+
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Top"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button Grid.Column="3"
+                    Content="X"
+                    Name="btnClose" Click="btnClose_Click">
+
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="FontSize" Value="32
+                                "/>
+                        <Setter Property="Width" Value="40"/>
+                        <Setter Property="Height" Value="50"/>
+                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                        <Setter Property="VerticalAlignment" Value="Top"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor" Value="Hand"></Setter>
+                                <Setter Property="Background" Value="#FF0A195A"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}">
+
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Top"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+        </Grid>
+        <Frame Name="frame"
+               Grid.Row="1"
+               NavigationUIVisibility="Hidden"/>
+
+        <!--Segment Three (Next Button)-->
+        <Grid Grid.Row="3" Margin="0, 10, 0, 0">
+
+            <Button Content="Install"
+                        Name="btnInstallAndFinish"
+                    PreviewMouseDown="btnNext_PreviewMouseDown">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="VerticalAlignment" Value="Center"/>
+                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                        <Setter Property="Margin" Value="0, 0, 10, 10"/>
+                        <Setter Property="Width" Value="100"/>
+                        <Setter Property="Height" Value="40"/>
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="Cursor" Value="Hand"/>
+                        <Setter Property="FontWeight" Value="bold"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FF071038"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="15"
+                                    BorderThickness="1"
+                                    BorderBrush="White"
+                                    Background="{TemplateBinding Background}">
+
+                            <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Grid>
+
+    </Grid>
+</Window>

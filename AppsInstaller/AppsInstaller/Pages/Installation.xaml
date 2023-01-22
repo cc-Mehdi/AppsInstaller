@@ -1,0 +1,53 @@
+﻿<Page x:Class="AppsInstaller.Pages.Installation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:gif="http://wpfanimatedgif.codeplex.com"
+      xmlns:local="clr-namespace:AppsInstaller.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="310" d:DesignWidth="600"
+      Title="Instalation">
+
+
+    <Grid>
+        <!--Segmentation-->
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <!--Segment One (Installing Animation)-->
+        <Grid Grid.Row="0">
+            <Image Name="imgStartInstall"
+                   gif:ImageBehavior.AnimatedSource="/Images/Install.gif"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+            <Image Name="imgFinishInstall"
+                   gif:ImageBehavior.AnimatedSource="/Images/Finish.gif"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Visibility="Hidden"/>
+        </Grid>
+
+        <!--Segment Two (ProgressBar)-->
+        <Grid Grid.Row="1">
+            <ProgressBar Name="progress"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Bottom"
+                         Margin="0, 0, 0, 10"
+                         Height="22" Width="580"
+                         Background="#FF001146"
+                         Foreground="#FF2048AB" Value="76"/>
+            <TextBlock Name="progressNumber"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="White"
+                       FontFamily="/Fonts/#Dosis"
+                       FontSize="15"
+                       FontWeight="Medium"
+                       Text="%50"/>
+        </Grid>
+
+    </Grid>
+</Page>
