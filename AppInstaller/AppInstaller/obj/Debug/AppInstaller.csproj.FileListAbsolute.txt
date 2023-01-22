@@ -1,0 +1,6 @@
+c:\users\xmehd\onedrive\documents\visual studio 2015\Projects\AppInstaller\AppInstaller\bin\Debug\AppInstaller.exe.config
+C:\Users\xmehd\OneDrive\Documents\Visual Studio 2015\Projects\AppInstaller\AppInstaller\bin\Debug\AppInstaller.exe
+C:\Users\xmehd\OneDrive\Documents\Visual Studio 2015\Projects\AppInstaller\AppInstaller\bin\Debug\AppInstaller.pdb
+C:\Users\xmehd\OneDrive\Documents\Visual Studio 2015\Projects\AppInstaller\AppInstaller\obj\Debug\AppInstaller.exe
+C:\Users\xmehd\OneDrive\Documents\Visual Studio 2015\Projects\AppInstaller\AppInstaller\obj\Debug\AppInstaller.pdb
+C:\Users\xmehd\onedrive\documents\visual studio 2015\Projects\AppInstaller\AppInstaller\obj\Debug\AppInstaller.csprojResolveAssemblyReference.cache
