@@ -146,14 +146,14 @@
         <!--Segment Three (Next Button)-->
         <Grid Grid.Row="3" Margin="0, 10, 0, 0">
 
-            <Button Content="Install"
+            <Button Content="بعدی"
                         Name="btnInstallAndFinish"
                     PreviewMouseDown="btnNext_PreviewMouseDown">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="VerticalAlignment" Value="Center"/>
-                        <Setter Property="HorizontalAlignment" Value="Right"/>
-                        <Setter Property="Margin" Value="0, 0, 10, 10"/>
+                        <Setter Property="HorizontalAlignment" Value="Left"/>
+                        <Setter Property="Margin" Value="10, 0, 0, 10"/>
                         <Setter Property="Width" Value="100"/>
                         <Setter Property="Height" Value="40"/>
                         <Setter Property="Background" Value="Transparent"/>

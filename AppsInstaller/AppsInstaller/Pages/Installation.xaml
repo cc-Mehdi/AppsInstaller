@@ -6,8 +6,7 @@
       xmlns:gif="http://wpfanimatedgif.codeplex.com"
       xmlns:local="clr-namespace:AppsInstaller.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="310" d:DesignWidth="600"
-      Title="Instalation">
+      d:DesignHeight="310" d:DesignWidth="600">
 
 
     <Grid>
@@ -22,7 +21,8 @@
             <Image Name="imgStartInstall"
                    gif:ImageBehavior.AnimatedSource="/Images/Install.gif"
                    VerticalAlignment="Center"
-                   HorizontalAlignment="Center"/>
+                   HorizontalAlignment="Center"
+                   Visibility="Hidden"/>
             <Image Name="imgFinishInstall"
                    gif:ImageBehavior.AnimatedSource="/Images/Finish.gif"
                    VerticalAlignment="Center"
@@ -38,7 +38,7 @@
                          Margin="0, 0, 0, 10"
                          Height="22" Width="580"
                          Background="#FF001146"
-                         Foreground="#FF2048AB" Value="76"/>
+                         Foreground="#FF2048AB"/>
             <TextBlock Name="progressNumber"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
@@ -46,7 +46,7 @@
                        FontFamily="/Fonts/#Dosis"
                        FontSize="15"
                        FontWeight="Medium"
-                       Text="%50"/>
+                       Text="%0"/>
         </Grid>
 
     </Grid>

@@ -20,90 +20,52 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <!--Segment One (Select Technologies for Install)-->
+            <!--Segment One (Agree Rules)-->
             <Grid Grid.Row="0" Margin="0, 10, 0, 0">
+
                 <!--Segmentation-->
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
 
-                <!--Technologies-->
-                <Image Grid.Column="0"
-                       RenderOptions.BitmapScalingMode="Fant"
-                       Width="100" Height="100"
-                       Name="btnImage1"
-                       Source="/Images/python.png"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       Opacity=".5"
-                       Cursor="Hand"
-                       MouseLeftButtonDown="btnImage1_MouseLeftButtonDown"
-                       />
-                <CheckBox Grid.Column="0"
-                          Background="Transparent"
-                          IsEnabled="False"
-                          Name="chImage1"
-                          Width="20" Height="20"
-                          VerticalAlignment="Top"
-                          HorizontalAlignment="Right"/>
+                <TextBlock Grid.Row="0" Grid.Column="1"
+                           Text="قوانین"
+                           Foreground="White"
+                           FontSize="30"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"/>
 
-                <Image Grid.Column="1"
-                       RenderOptions.BitmapScalingMode="Fant"
-                       Width="100" Height="100"
-                       Name="btnImage2"
-                       Source="/Images/mysql.png"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       Opacity=".5"
-                       Cursor="Hand"
-                       MouseLeftButtonDown="btnImage2_MouseLeftButtonDown"/>
-                <CheckBox Grid.Column="1"
-                          Background="Transparent"
-                          IsEnabled="False"
-                          Name="chImage2"
-                          Width="20" Height="20"
-                          VerticalAlignment="Top"
-                          HorizontalAlignment="Right"/>
+                <TextBlock Grid.Row="1" Grid.Column="1"
+                           FlowDirection="RightToLeft"
+                           Text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد"
+                           TextWrapping="WrapWithOverflow"
+                           Foreground="Gray"
+                           FontSize="14"
+                           FontWeight="Medium"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Left"
+                           Margin="25,0,25,0"/>
 
-                <Image Grid.Column="2"
-                       RenderOptions.BitmapScalingMode="Fant"
-                       Width="100" Height="100"
-                       Name="btnImage3"
-                       Source="/Images/git.png"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       Opacity=".5"
-                       Cursor="Hand"
-                       MouseLeftButtonDown="btnImage3_MouseLeftButtonDown"/>
-                <CheckBox Grid.Column="2"
+                <CheckBox Grid.Row="2" Grid.Column="0"
+                          Name="chAgreeRules"
                           Background="Transparent"
-                          IsEnabled="False"
-                          Name="chImage3"
-                          Width="20" Height="20"
-                          VerticalAlignment="Top"
-                          HorizontalAlignment="Right"/>
+                          VerticalAlignment="Center"
+                          HorizontalAlignment="Center"
+                          Checked="chCreateShortcut_Checked"
+                          Unchecked="chCreateShortcut_Checked"
+                          Margin="0,0,-130,0"/>
 
-                <Image Grid.Column="3"
-                       RenderOptions.BitmapScalingMode="Fant"
-                       Width="100" Height="100"
-                       Name="btnImage4"
-                       Source="/Images/chrome.png"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       Opacity=".5"
-                       Cursor="Hand"
-                       MouseLeftButtonDown="btnImage4_MouseLeftButtonDown"/>
-                <CheckBox Grid.Column="3"
-                          Background="Transparent"
-                          IsEnabled="False"
-                          Name="chImage4"
-                          Width="20" Height="20"
-                          VerticalAlignment="Top"
-                          HorizontalAlignment="Right"/>
-                <!--End Technologies-->
+                <TextBlock Grid.Row="2" Grid.Column="1"
+                           Text="قوانین را می‌پذیرم"
+                           TextWrapping="Wrap"
+                           Foreground="White"
+                           FontSize="14"
+                           FontWeight="Medium"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"/>
 
             </Grid>
 
@@ -112,22 +74,22 @@
 
                 <!--Segmentation-->
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="100"/>
                     <ColumnDefinition/>
-                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="80"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Text="Location"
+                <TextBlock Grid.Column="2" Text="آدرس"
                            FontSize="20"
                            Foreground="White"
                            VerticalAlignment="Center"
-                           Margin="18
-                           , 0, 0, 0">
-                </TextBlock>
+                           HorizontalAlignment="Right"
+                           Margin="18"/>
                 <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="3"
                         Grid.Column="1"
                         Height="30"
-                        Width="410">
+                        Width="410"
+                        Margin="5,0,0,0">
 
                     <TextBlock Name="txtInstallLocation"
                            Grid.Column="1"
@@ -135,13 +97,12 @@
                            VerticalAlignment="Center"
                            Foreground="gray"
                            IsEnabled="False"
-                           Margin="5,0,0,0">
-                    </TextBlock>
+                           Margin="5,0,0,0"/>
 
 
                 </Border>
-                <Button Content="Browse"
-                        Grid.Column="2"
+                <Button Content="انتخاب"
+                        Grid.Column="0"
                         Name="btnInstallLocation" 
                         PreviewMouseDown="btnInstallLocation_PreviewMouseDown">
 
@@ -153,6 +114,7 @@
                             <Setter Property="Foreground" Value="White"/>
                             <Setter Property="FontSize" Value="15"/>
                             <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Margin" Value="10,0,0,0"/>
 
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
@@ -183,28 +145,26 @@
             </Grid>
 
             <!--Segment Two (Choose for create shortcut or not)-->
-            <Grid Grid.Row="2" Margin="0, 10, 0, 0">
+            <Grid Grid.Row="2">
                 <!--Segmentation-->
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="50"/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
 
                 <CheckBox Grid.Column="0"
                           Name="chCreateShortcut"
                           Background="Transparent"
                           VerticalAlignment="Center"
-                          HorizontalAlignment="Center"
+                          HorizontalAlignment="Right"
                           Checked="chCreateShortcut_Checked"
-                          Unchecked="chCreateShortcut_Checked"/>
+                          Unchecked="chCreateShortcut_Checked"
+                          Margin="0,0,20,0"/>
 
                 <TextBlock Grid.Column="1"
-                           Text="Create Shortcut"
+                           Text="افزودن میانبر"
                            Foreground="White"
                            FontSize="14"
                            FontWeight="Medium"
                            VerticalAlignment="Center"
-                           HorizontalAlignment="Left"/>
+                           HorizontalAlignment="Right"
+                           Margin="0,0,40,0"/>
             </Grid>
 
         </Grid>

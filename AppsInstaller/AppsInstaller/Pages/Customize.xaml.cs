@@ -20,26 +20,6 @@ namespace AppsInstaller.Pages
             InitializeComponent();
         }
 
-        private void btnImage1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            selectTechnologiesEvent(chImage1, btnImage1, "python");
-        }
-
-        private void btnImage2_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            selectTechnologiesEvent(chImage2, btnImage2, "MySql");
-        }
-
-        private void btnImage3_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            selectTechnologiesEvent(chImage3, btnImage3, "Git");
-        }
-
-        private void btnImage4_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            selectTechnologiesEvent(chImage4, btnImage4, "Chrome");
-        }
-
         //Select and UnSelect technologies
         private void selectTechnologiesEvent(CheckBox chImage, Image btnImage, string techName)
         {

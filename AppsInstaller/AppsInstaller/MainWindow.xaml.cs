@@ -11,6 +11,7 @@ namespace AppsInstaller
     /// </summary>
     public partial class MainWindow : Window
     {
+        Installation installationPage = null;
         Customize customizePage = new Customize();
 
         public MainWindow()
@@ -34,22 +35,27 @@ namespace AppsInstaller
         {
             if (e.ChangedButton == MouseButton.Left)
             {
-                if (btnInstallAndFinish.Content.ToString() == "Install")
+                if (customizePage.installLocation == "")
+                    MessageBox.Show("Please select install location");
+                else
                 {
-                    if (customizePage.installLocation == "")
-                        MessageBox.Show("Please select install location");
-                    else if (customizePage.technologies.Count == 0)
-                        MessageBox.Show("Select your technologies for install");
-                    else
+                    if (btnInstallAndFinish.Content.ToString() == "بعدی")
                     {
-                        btnClose.IsEnabled = btnInstallAndFinish.IsEnabled = false;
-                        btnInstallAndFinish.Content = "Finish";
-                        Installation installationPage = new Installation(customizePage.installLocation, customizePage.createShortcut, customizePage.technologies, ref btnClose, ref btnInstallAndFinish);
+                        btnInstallAndFinish.Content = "نصب";
+                        installationPage = new Installation(customizePage.installLocation, customizePage.createShortcut);
                         frame.NavigationService.Navigate(installationPage);
                     }
+                    else if (btnInstallAndFinish.Content.ToString() == "نصب")
+                    {
+                        btnClose.IsEnabled = false;
+                        btnInstallAndFinish.Content = "پایان";
+                        installationPage.StartInstalling(ref btnClose, ref btnInstallAndFinish);
+                    }
+                    else
+                        if(installationPage.isInstallFinished)
+                            this.Close();
+
                 }
-                else
-                    this.Close();
             }
         }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AppsInstaller
@@ -66,7 +67,7 @@ namespace AppsInstaller
         //Check install process is finished or not.
         public bool isInstallComplete(string appName)
         {
-            run($"tasklist /fi \"imagename eq {appName}\"");
+            run($"tasklist /fi \"imagename eq {appName}.exe\"");
             char[] ch = cmd.StandardOutput.ReadToEnd().ToString().ToCharArray();
 
             //if result have 'INFO' word its mean install process is end.
@@ -78,7 +79,7 @@ namespace AppsInstaller
         }
 
         //Create a shortcut of program after complete install.
-        private void createShortcut(string appName, string appLocation)
+        public void createShortcut(string appName, string appLocation)
         {
             string completeAppAddress = $"{appLocation}python\\Python311\\{appName}.exe";
             while (!System.IO.File.Exists(fixAddress(completeAppAddress)))
@@ -97,7 +98,7 @@ namespace AppsInstaller
         }
 
         //Move root program folder to custom location that user selected.
-        private void changeFileLocation(string oldLocation, string newLocation)
+        public void changeFileLocation(string oldLocation, string newLocation)
         {
             run($"move {oldLocation} {newLocation}");
         }
@@ -106,7 +107,6 @@ namespace AppsInstaller
         public void installProcess(string appName, string installLocation, bool shortcut)
         {
             changeFileLocation($"C:/Users/\"{findSystemUserName()}\"/AppData/Local/Programs/\"{appName}\"", installLocation);
-            //createShortcut(appName, "C:\\Users\\xmehd\\OneDrive\\Desktop\\Python\\Python311");
             if (shortcut)
                 createShortcut(appName, installLocation);
         }

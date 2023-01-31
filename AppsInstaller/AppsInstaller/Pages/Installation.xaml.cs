@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 
@@ -11,30 +12,55 @@ namespace AppsInstaller.Pages
     /// </summary>
     public partial class Installation : Page
     {
+        public bool isInstallFinished = false;
         public string _installLocation = "";
         public bool _createShortcut = false;
-        public List<string> _technologies = new List<string>();
         private CommandPrompt cmd = new CommandPrompt();
 
-        public Installation(string installLocation, bool createShortcut, List<string> technologies, ref Button btnClose, ref Button btnFinish)
+        public Installation(string installLocation, bool createShortcut)
         {
             _installLocation = installLocation;
             _createShortcut = createShortcut;
-            _technologies = technologies;
             InitializeComponent();
-            cmd.install(technologies[0]);
-            loadingAnimation(technologies[0]);
-            if(progress.Value == 100)
+        }
+
+        public void StartInstalling(ref Button btnClose, ref Button btnFinish)
+        {
+            imgStartInstall.Visibility = System.Windows.Visibility.Visible;
+
+            cmd.install("python");
+
+            loadingAnimation("python");
+        }
+
+        private void EnableButtons(ref Button btnClose, ref Button btnFinish)
+        {
+            btnClose.IsEnabled = btnFinish.IsEnabled = true;
+        }
+
+        private void FinishInstalling()
+        {
+            cmd.installProcess("python", _installLocation, _createShortcut);
+            isInstallFinished = true;
+            imgStartInstall.Visibility = System.Windows.Visibility.Hidden;
+            imgFinishInstall.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void changeProgressValue(int min, int max)
+        {
+            while(min <= max)
             {
-                cmd.installProcess(technologies[0], installLocation, createShortcut);
-                btnClose.IsEnabled = btnFinish.IsEnabled = true;
-                imgStartInstall.Visibility = System.Windows.Visibility.Hidden;
-                imgFinishInstall.Visibility = System.Windows.Visibility.Visible;
+                progress.Value = min;
+                progressNumber.Text = $"%{min}";
+                min += new Random().Next(min, max);
+                Thread.Sleep(300);
             }
+            progress.Value = max;
+            progressNumber.Text = $"%{max}";
         }
 
         //Show install process status.
-        private void loadingAnimation(string appName)
+        private async Task loadingAnimation(string appName)
         {
             Random rand = new Random();
             for (int i = 0; i <= 150; i += rand.Next(1, 15))
@@ -45,14 +71,16 @@ namespace AppsInstaller.Pages
                     {
                         progressNumber.Text = i.ToString();
                         progress.Value = i;
+                        await Task.Delay(1000);
                     }
                     else
                     {
                         progressNumber.Text = "99";
                         progress.Value = 99;
+                        await Task.Delay(1000);
                         while (true)
                         {
-                            Thread.Sleep(2000);
+                            await Task.Delay(2000);
                             if (cmd.isInstallComplete(appName))
                                 break;
                         }
@@ -62,9 +90,11 @@ namespace AppsInstaller.Pages
                 {
                     progressNumber.Text = "100";
                     progress.Value = 100;
+                    FinishInstalling();
                     break;
+
                 }
-                Thread.Sleep(300);
+                await Task.Delay(300);
             }
         }
     }
