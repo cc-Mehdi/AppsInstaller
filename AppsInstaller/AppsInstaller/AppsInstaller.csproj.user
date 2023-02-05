@@ -13,6 +13,9 @@
     <Compile Update="Pages\Installation.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\RulesModal.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
@@ -22,6 +25,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\Installation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\RulesModal.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

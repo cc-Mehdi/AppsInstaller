@@ -13,28 +13,10 @@ namespace AppsInstaller.Pages
     {
         public string installLocation = "";
         public bool createShortcut = false;
-        public List<string> technologies = new List<string>();
 
         public Customize()
         {
             InitializeComponent();
-        }
-
-        //Select and UnSelect technologies
-        private void selectTechnologiesEvent(CheckBox chImage, Image btnImage, string techName)
-        {
-            if (chImage.IsChecked == true)
-            {
-                btnImage.Opacity = .5;
-                chImage.IsChecked = false;
-                technologies.Remove(techName);
-            }
-            else
-            {
-                btnImage.Opacity = 1;
-                chImage.IsChecked = true;
-                technologies.Add(techName);
-            }
         }
 
         private void btnInstallLocation_PreviewMouseDown(object sender, MouseButtonEventArgs e)
@@ -69,6 +51,12 @@ namespace AppsInstaller.Pages
         private void chCreateShortcut_Checked(object sender, RoutedEventArgs e)
         {
             createShortcut = (bool)chCreateShortcut.IsChecked;
+        }
+
+        private void TextBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            RulesModal rulesModal = new RulesModal();
+            rulesModal.ShowDialog();
         }
     }
 }

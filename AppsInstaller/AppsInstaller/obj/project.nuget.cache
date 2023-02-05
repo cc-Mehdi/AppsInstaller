@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2z+1W0074av5Q6T2cXbRjiQLTYpfaWXEnqGd2KySWKdZCb6/wkmwI0e4GIazxJxsiR4GtViW1hi95QuMzTT6hw==",
+  "dgSpecHash": "IYw2E051DcHOqKTAAWy42LcxDnHDljWea0UFuco71mt8X6pPzgRw49lHvZgpDSjm50xRMEyl7qQkDSl2nSBbtQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\xmehd\\OneDrive\\Desktop\\AppsInstaller\\AppsInstaller\\AppsInstaller.csproj",
+  "projectFilePath": "C:\\Users\\xmehd\\OneDrive\\Desktop\\New folder\\AppsInstaller\\AppsInstaller\\AppsInstaller.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xmehd\\.nuget\\packages\\wpfanimatedgif\\2.0.2\\wpfanimatedgif.2.0.2.nupkg.sha512"
   ],

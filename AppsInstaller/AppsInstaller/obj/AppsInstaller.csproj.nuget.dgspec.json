@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\xmehd\\OneDrive\\Desktop\\AppsInstaller\\AppsInstaller\\AppsInstaller.csproj": {}
+    "C:\\Users\\xmehd\\OneDrive\\Desktop\\New folder\\AppsInstaller\\AppsInstaller\\AppsInstaller.csproj": {}
   },
   "projects": {
-    "C:\\Users\\xmehd\\OneDrive\\Desktop\\AppsInstaller\\AppsInstaller\\AppsInstaller.csproj": {
+    "C:\\Users\\xmehd\\OneDrive\\Desktop\\New folder\\AppsInstaller\\AppsInstaller\\AppsInstaller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xmehd\\OneDrive\\Desktop\\AppsInstaller\\AppsInstaller\\AppsInstaller.csproj",
+        "projectUniqueName": "C:\\Users\\xmehd\\OneDrive\\Desktop\\New folder\\AppsInstaller\\AppsInstaller\\AppsInstaller.csproj",
         "projectName": "AppsInstaller",
-        "projectPath": "C:\\Users\\xmehd\\OneDrive\\Desktop\\AppsInstaller\\AppsInstaller\\AppsInstaller.csproj",
+        "projectPath": "C:\\Users\\xmehd\\OneDrive\\Desktop\\New folder\\AppsInstaller\\AppsInstaller\\AppsInstaller.csproj",
         "packagesPath": "C:\\Users\\xmehd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xmehd\\OneDrive\\Desktop\\AppsInstaller\\AppsInstaller\\obj\\",
+        "outputPath": "C:\\Users\\xmehd\\OneDrive\\Desktop\\New folder\\AppsInstaller\\AppsInstaller\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\xmehd\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -25,3 +25,32 @@ C:\Users\xmehd\OneDrive\Desktop\AppsInstaller\AppsInstaller\obj\Debug\net6.0-win
 C:\Users\xmehd\OneDrive\Desktop\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\AppsInstaller.pdb
 C:\Users\xmehd\OneDrive\Desktop\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\AppsInstaller.genruntimeconfig.cache
 C:\Users\xmehd\OneDrive\Desktop\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\ref\AppsInstaller.dll
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\bin\Debug\net6.0-windows\AppsInstaller.exe
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\bin\Debug\net6.0-windows\AppsInstaller.deps.json
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\bin\Debug\net6.0-windows\AppsInstaller.runtimeconfig.json
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\bin\Debug\net6.0-windows\AppsInstaller.dll
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\bin\Debug\net6.0-windows\AppsInstaller.pdb
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\bin\Debug\net6.0-windows\WpfAnimatedGif.dll
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\AppsInstaller.csproj.AssemblyReference.cache
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\Pages\Customize.g.cs
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\Pages\Installation.g.cs
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\AppsInstaller_MarkupCompile.cache
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\AppsInstaller_MarkupCompile.lref
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\Pages\Customize.baml
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\Pages\Installation.baml
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\AppsInstaller.g.resources
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\AppsInstaller.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\AppsInstaller.AssemblyInfoInputs.cache
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\AppsInstaller.AssemblyInfo.cs
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\AppsInstaller.csproj.CoreCompileInputs.cache
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\AppsInstaller.csproj.CopyComplete
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\AppsInstaller.dll
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\refint\AppsInstaller.dll
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\AppsInstaller.pdb
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\AppsInstaller.genruntimeconfig.cache
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\ref\AppsInstaller.dll
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\Pages\RulesModal.g.cs
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\Pages\RulesModal.baml

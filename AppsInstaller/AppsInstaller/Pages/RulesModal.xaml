@@ -1,0 +1,78 @@
+﻿<Window x:Class="AppsInstaller.Pages.RulesModal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppsInstaller.Pages"
+        mc:Ignorable="d"
+        Title="RulesModal" Height="500" Width="400"
+        WindowStyle="none"
+        ResizeMode="NoResize"
+        FontFamily="Fonts/#Dosis"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!--Create background gradiant-->
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF000000" Offset="1"/>
+                <GradientStop Color="#FF12246F"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <!--Segmentation-->
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="1"
+                           FlowDirection="RightToLeft"
+                           Text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد"
+                           TextWrapping="WrapWithOverflow"
+                           Foreground="#FF00D1F9"
+                           FontSize="24"
+                           FontWeight="Medium"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Left"
+                           Margin="25,0,25,0"/>
+
+        <Button Grid.Row="1"
+            x:Name="btnClose"
+                Content="فهمیدم" Click="btnClose_Click">
+
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                    <Setter Property="HorizontalAlignment" Value="Left"/>
+                    <Setter Property="Margin" Value="10, 0, 0, 10"/>
+                    <Setter Property="Width" Value="100"/>
+                    <Setter Property="Height" Value="40"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Setter Property="FontWeight" Value="bold"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FF071038"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="15"
+                                    BorderThickness="1"
+                                    BorderBrush="White"
+                                    Background="{TemplateBinding Background}">
+
+                        <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+    </Grid>
+</Window>

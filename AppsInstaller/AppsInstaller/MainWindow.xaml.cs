@@ -36,7 +36,9 @@ namespace AppsInstaller
             if (e.ChangedButton == MouseButton.Left)
             {
                 if (customizePage.installLocation == "")
-                    MessageBox.Show("Please select install location");
+                    MessageBox.Show("لطفا محل نصب را انتخاب کنید", "خطا", MessageBoxButton.OK, MessageBoxImage.Error);
+                else if(customizePage.chAgreeRules.IsChecked == false)
+                    MessageBox.Show("اگر با قوانین موافق هستید گزینه موافق هستم را بزنید", "خطا", MessageBoxButton.OK, MessageBoxImage.Error);
                 else
                 {
                     if (btnInstallAndFinish.Content.ToString() == "بعدی")

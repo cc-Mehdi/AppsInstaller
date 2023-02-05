@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\xmehd\OneDrive\Desktop\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\obj\Debug\net6.0-windows\
 AppsInstaller
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\xmehd\OneDrive\Desktop\AppsInstaller\AppsInstaller\App.xaml
-3988578240
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppsInstaller\AppsInstaller\App.xaml
+4-665386674
 
-6-335003822
+7-1124587
 2041930007720
-MainWindow.xaml;Pages\Customize.xaml;Pages\Installation.xaml;
+MainWindow.xaml;Pages\Customize.xaml;Pages\Installation.xaml;Pages\RulesModal.xaml;
 
 False
 

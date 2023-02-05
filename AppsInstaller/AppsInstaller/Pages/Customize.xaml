@@ -40,14 +40,17 @@
 
                 <TextBlock Grid.Row="1" Grid.Column="1"
                            FlowDirection="RightToLeft"
-                           Text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد"
+                           Text="مشاهده قوانین"
                            TextWrapping="WrapWithOverflow"
-                           Foreground="Gray"
+                           Foreground="cyan"
+                           TextDecorations="Underline"
+                           Cursor="Hand"
                            FontSize="14"
                            FontWeight="Medium"
                            VerticalAlignment="Center"
-                           HorizontalAlignment="Left"
-                           Margin="25,0,25,0"/>
+                           HorizontalAlignment="Center"
+                           Margin="25,0,25,0"
+                           MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"/>
 
                 <CheckBox Grid.Row="2" Grid.Column="0"
                           Name="chAgreeRules"
