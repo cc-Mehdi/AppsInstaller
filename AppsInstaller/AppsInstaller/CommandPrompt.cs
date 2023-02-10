@@ -1,6 +1,7 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AppsInstaller
@@ -59,9 +60,8 @@ namespace AppsInstaller
         {
             int cpuStructure = findCpuArchitecture();
             //set app address with cpu architecture
-            string appAddress = Application.StartupPath + $"Prerequisites\\{cpuStructure}-bit";
-            run($"cd {(appAddress)} && {appName}.exe /s");
-            //loadingAnimation("C:/Users/xmehd/AppData/Local/Programs/Python");
+            string setupLocation = Application.StartupPath + $"Prerequisites\\{cpuStructure}-bit";
+            run($"cd {setupLocation} && {appName}.exe /s");
         }
 
         //Check install process is finished or not.
@@ -79,13 +79,12 @@ namespace AppsInstaller
         }
 
         //Create a shortcut of program after complete install.
-        public void createShortcut(string appName, string appLocation)
+        public void createShortcut(string appName, string rootLocation, string appLocation)
         {
-            string completeAppAddress = $"{appLocation}python\\Python311\\{appName}.exe";
+            string completeAppAddress = $"{rootLocation + appLocation + appName}.exe";
             while (!System.IO.File.Exists(fixAddress(completeAppAddress)))
                 Thread.Sleep(1000);
             run($"copy {completeAppAddress} C:\\Users\\{findSystemUserName()}\\OneDrive\\Desktop");
-            string s = cmd.StandardOutput.ReadToEnd();
         }
 
         //Remove Double Qute from address
@@ -104,11 +103,11 @@ namespace AppsInstaller
         }
 
         //Complete install process.
-        public void installProcess(string appName, string installLocation, bool shortcut)
+        public void installProcess(string appName, string appLocation, string installLocation, bool shortcut)
         {
             changeFileLocation($"C:/Users/\"{findSystemUserName()}\"/AppData/Local/Programs/\"{appName}\"", installLocation);
             if (shortcut)
-                createShortcut(appName, installLocation);
+                createShortcut(appName, installLocation, appLocation);
         }
     }
 }

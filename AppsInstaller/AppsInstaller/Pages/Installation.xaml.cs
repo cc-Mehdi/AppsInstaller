@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Controls;
-using System.Windows.Media.Imaging;
 
 namespace AppsInstaller.Pages
 {
@@ -16,21 +17,28 @@ namespace AppsInstaller.Pages
         public string _installLocation = "";
         public bool _createShortcut = false;
         private CommandPrompt cmd = new CommandPrompt();
+        List<AppOptions> appsList = new List<AppOptions>();
+        int appNumber = 0;
 
         public Installation(string installLocation, bool createShortcut)
         {
             _installLocation = installLocation;
             _createShortcut = createShortcut;
             InitializeComponent();
+            using (StreamReader r = new StreamReader(System.Windows.Forms.Application.StartupPath + "/configs.json"))
+            {
+                string json = r.ReadToEnd();
+                appsList = JsonSerializer.Deserialize<List<AppOptions>>(json);
+            }
         }
 
         public void StartInstalling(ref Button btnClose, ref Button btnFinish)
         {
             imgStartInstall.Visibility = System.Windows.Visibility.Visible;
 
-            cmd.install("python");
+            cmd.install(appsList[appNumber].AppName);
 
-            loadingAnimation("python");
+            loadingAnimation(appsList[appNumber].AppName);
         }
 
         private void EnableButtons(ref Button btnClose, ref Button btnFinish)
@@ -40,7 +48,8 @@ namespace AppsInstaller.Pages
 
         private void FinishInstalling()
         {
-            cmd.installProcess("python", _installLocation, _createShortcut);
+            cmd.installProcess(appsList[appNumber].AppName, appsList[appNumber].AppLocation, _installLocation, _createShortcut);
+            //Tell to MainWindows Page to close application when user click finish button
             isInstallFinished = true;
             imgStartInstall.Visibility = System.Windows.Visibility.Hidden;
             imgFinishInstall.Visibility = System.Windows.Visibility.Visible;
@@ -97,5 +106,11 @@ namespace AppsInstaller.Pages
                 await Task.Delay(300);
             }
         }
+    }
+
+    internal class AppOptions
+    {
+        public string AppName { get; set; }
+        public string AppLocation { get; set; }
     }
 }

@@ -4,3 +4,8 @@ C:\Users\xmehd\OneDrive\Documents\Visual Studio 2015\Projects\AppInstaller\AppIn
 C:\Users\xmehd\OneDrive\Documents\Visual Studio 2015\Projects\AppInstaller\AppInstaller\obj\Debug\AppInstaller.exe
 C:\Users\xmehd\OneDrive\Documents\Visual Studio 2015\Projects\AppInstaller\AppInstaller\obj\Debug\AppInstaller.pdb
 C:\Users\xmehd\onedrive\documents\visual studio 2015\Projects\AppInstaller\AppInstaller\obj\Debug\AppInstaller.csprojResolveAssemblyReference.cache
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppInstaller\AppInstaller\obj\Debug\AppInstaller.csproj.AssemblyReference.cache
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppInstaller\AppInstaller\obj\Debug\AppInstaller.csproj.SuggestedBindingRedirects.cache
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppInstaller\AppInstaller\obj\Debug\AppInstaller.csproj.CoreCompileInputs.cache
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppInstaller\AppInstaller\obj\Debug\AppInstaller.exe
+C:\Users\xmehd\OneDrive\Desktop\New folder\AppInstaller\AppInstaller\obj\Debug\AppInstaller.pdb
