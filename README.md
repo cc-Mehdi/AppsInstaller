@@ -6,10 +6,12 @@
 #### اگر نیاز دارید که روی سیستم های مختلف به طور معمول مجموعه ای از نرم افزار ها رو نصب کنید دیگه نیازی به نصب تک به تک آنها نیست میتونید با انتخاب نرم افزار های مورد نظر همه را یکجا نصب کنید
 
 ## صفحه اصلی
-![image](https://github.com/cc-Mehdi/AppsInstaller/assets/57840939/3f504b45-558e-4edd-8fb8-5c604b5e2697)
+![image](https://github.com/cc-Mehdi/AppsInstaller/assets/57840939/4bd1d1c4-592c-4f0b-bc3e-ee6cab6b4205)
+
 
  ## صفحه نصب
-![image](https://github.com/cc-Mehdi/AppsInstaller/assets/57840939/bc832b5e-5c62-4f92-9e67-9598fc0a495d)
+![image](https://github.com/cc-Mehdi/AppsInstaller/assets/57840939/42ad5e48-3019-4fa7-a3a9-d2305e03b230)
+
 
 
 ## جدول محتوا
