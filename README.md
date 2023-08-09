@@ -1,3 +1,5 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/cc-Mehdi/AppsInstaller)
+
 # AppsInstaller
 
 ### نرم افزار برای نصب مجمعوعه ای از نرم افزار های مورد نیاز شما به صورت یکجا و نسبت به مشخصات سیستم شما
