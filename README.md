@@ -3,23 +3,25 @@
 
 # AppsInstaller
 
-### نرم افزار برای نصب مجمعوعه ای از نرم افزار های مورد نیاز شما به صورت یکجا و نسبت به مشخصات سیستم شما
-#### اگر نیاز دارید که روی سیستم های مختلف به طور معمول مجموعه ای از نرم افزار ها رو نصب کنید دیگه نیازی به نصب تک به تک آنها نیست میتونید با انتخاب نرم افزار های مورد نظر همه را یکجا نصب کنید
 
-## صفحه اصلی
-![image](https://github.com/cc-Mehdi/AppsInstaller/assets/57840939/4bd1d1c4-592c-4f0b-bc3e-ee6cab6b4205)
+#### A Windows application installer that allows users to install a curated collection of Windows applications. This software streamlines the process by bundling together a set of applications that users commonly need, saving them time from individually downloading and installing each program. It could provide options for users to customize the selection or install everything in one go. Overall, this tool simplifies the installation of a specific group of applications, enhancing user convenience and efficiency.
 
-
- ## صفحه نصب
-![image](https://github.com/cc-Mehdi/AppsInstaller/assets/57840939/42ad5e48-3019-4fa7-a3a9-d2305e03b230)
-
+#### یک نصب‌کننده برنامه کاربردی ویندوز است که به کاربران اجازه می‌دهد مجموعه‌ای از برنامه‌های کاربردی ویندوز سفارشی را نصب کنند. این نرم‌افزار با جمع‌آوری مجموعه‌ای از برنامه‌های کاربردی که معمولاً به آن‌ها نیاز دارید، فرآیند را ساده می‌کند و در زمان آن‌ها از دانلود و نصب جداگانه هر برنامه صرفه‌جویی می‌کند. این می تواند گزینه هایی را برای کاربران فراهم کند تا انتخاب را سفارشی کنند یا همه چیز را یکجا نصب کنند. به طور کلی، این ابزار نصب یک گروه خاص از برنامه ها را ساده می کند و راحتی و کارایی کاربر را افزایش می دهد.
 
 
 ## جدول محتوا
+* [نرم‌افزار](#نرمافزار)
 * [تکنولوژی‌ها](#تکنولوژیها)
 * [راه‌اندازی](#راهاندازی)
 * [نحوه استفاده](#نحوه-استفاده)
 * [امکانات](#امکانات)
+
+
+## نرم‌افزار
+![image](https://github.com/cc-Mehdi/AppsInstaller/assets/57840939/4bd1d1c4-592c-4f0b-bc3e-ee6cab6b4205)
+![image](https://github.com/cc-Mehdi/AppsInstaller/assets/57840939/42ad5e48-3019-4fa7-a3a9-d2305e03b230)
+
+
 
 ## تکنولوژی‌ها
 * سی شارپ - CSharp
