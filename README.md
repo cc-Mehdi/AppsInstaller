@@ -18,8 +18,7 @@
 
 
 ## نرم‌افزار
-![image](https://github.com/cc-Mehdi/AppsInstaller/assets/57840939/4bd1d1c4-592c-4f0b-bc3e-ee6cab6b4205)
-![image](https://github.com/cc-Mehdi/AppsInstaller/assets/57840939/42ad5e48-3019-4fa7-a3a9-d2305e03b230)
+![image](https://github.com/cc-Mehdi/AppsInstaller/assets/57840939/4bd1d1c4-592c-4f0b-bc3e-ee6cab6b4205) ![image](https://github.com/cc-Mehdi/AppsInstaller/assets/57840939/42ad5e48-3019-4fa7-a3a9-d2305e03b230)
 
 
 
@@ -42,8 +41,7 @@
 
 ## امکانات
 * استفاده از Clean Code
-* در دو پلتفرم مختلف ویندوز فرم (WPF) و کنسول اپ (Console Application)
-
+* در دو پلتفرم ویندوز اپلیکیشن (WPF) و کنسول اپلیکیشن (Console Application)
 
 
 ---
